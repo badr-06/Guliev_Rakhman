@@ -11,3 +11,7 @@ test:
 
 clean:
 	rm *.out
+
+clang:
+	clang-format -n *.cpp *.h
+	clang-format -i *.cpp *.h

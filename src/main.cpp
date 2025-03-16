@@ -28,6 +28,11 @@ int main() {
   int vertices_count, edges_count, start_vertix;
   std::ifstream fp("graph_1.txt");
 
+  if (!fp.is_open()) {
+    std::cout << "Ошибка: не удалось открыть файл!" << std::endl;
+    return 1;
+  }
+
   fp >> vertices_count;
   fp >> edges_count;
 

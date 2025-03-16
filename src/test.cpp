@@ -28,6 +28,8 @@ TEST(graph_1_txt, test1) {
   int vertices_count, edges_count, start_vertix;
   std::ifstream fp("graph_1.txt");
 
+  ASSERT_TRUE(fp.is_open());
+
   fp >> vertices_count;
   fp >> edges_count;
 
@@ -56,6 +58,8 @@ TEST(graph_2_txt, test2) {
   int vertices_count, edges_count, start_vertix;
   std::ifstream fp("graph_2.txt");
 
+  ASSERT_TRUE(fp.is_open());
+
   fp >> vertices_count;
   fp >> edges_count;
 
@@ -83,6 +87,8 @@ TEST(graph_2_txt, test2) {
 TEST(graph_3_txt, test3) {
   int vertices_count, edges_count, start_vertix;
   std::ifstream fp("graph_3.txt");
+
+  ASSERT_TRUE(fp.is_open());
 
   fp >> vertices_count;
   fp >> edges_count;
