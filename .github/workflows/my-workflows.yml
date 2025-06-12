@@ -7,6 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Intall python
-      - uses: actions/setup-python@v5
      
