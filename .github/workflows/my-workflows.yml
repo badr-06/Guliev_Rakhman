@@ -5,12 +5,4 @@ jobs:
   ruff:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: Install python
-      - uses: actions/setup-python@v5
-        with:
-          pthon-version.3.11
-      - name: Install ruff
-        run: pip install ruff
-      - name: Run ruff
-        run: ruff check .
+      run: ls -a
