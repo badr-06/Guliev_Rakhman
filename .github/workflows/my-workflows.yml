@@ -1,8 +1,10 @@
 name: Ruff Linting
+
 on: [push, pull_request]
 
 jobs:
   ruff:
     runs-on: ubuntu-latest
     steps:
-      run: ls -a
+      - name: check file
+        run: ls -a
